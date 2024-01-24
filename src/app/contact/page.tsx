@@ -56,10 +56,10 @@ function ContactForm() {
     <FadeIn className="lg:order-last">
       <form>
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Work inquiries
+            Demandes de travail
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label="Name" name="name" autoComplete="name" />
+          <TextInput label="Nom" name="name" autoComplete="name" />
           <TextInput
             label="Email"
             type="email"
@@ -67,11 +67,11 @@ function ContactForm() {
             autoComplete="email"
           />
           <TextInput
-            label="Company"
+            label="Entreprise"
             name="company"
             autoComplete="organization"
           />
-          <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
+          <TextInput label="Téléphone" type="tel" name="phone" autoComplete="tel" />
           <TextInput label="Message" name="message" />
         </div>
         <Button type="submit" className="mt-10">
@@ -86,10 +86,10 @@ function ContactDetails() {
   return (
     <FadeIn>
       <h2 className="font-display text-base font-semibold text-neutral-950">
-        Nos Bureaux
+        Mes Studios
       </h2>
       <p className="mt-6 text-base text-neutral-600">
-          Vous aimez le contact direct ? Nous, on préfère le numérique, mais voici nos adresses pour satisfaire aux exigences légales !
+          Vous aimez le contact direct ? Nous, on préfère le numérique, mais voici nos adresses pour satisfaire aux exigences de tous !
       </p>
 
       <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
@@ -128,15 +128,15 @@ function ContactDetails() {
 }
 
 export const metadata: Metadata = {
-  title: 'Contact Us',
-  description: 'Let’s work together. We can’t wait to hear from you.',
+  title: 'Contactez Moi',
+  description: 'Travaillons ensemble. Je suis impatients de vous entendre.',
 }
 
 export default function Contact() {
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Let’s work together">
-        <p>We can’t wait to hear from you.</p>
+      <PageIntro eyebrow="Contactez Moi" title="Travaillons ensemble">
+        <p>Je suis impatient de vous entendre.</p>
       </PageIntro>
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
